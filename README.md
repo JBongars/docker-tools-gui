@@ -2,7 +2,7 @@
 
 ## Description
 
-New and improved GUI for Docker Tools. This is a work in progress.
+New and improved layer for graphical Docker Tools
 
 ## How it Works
 
