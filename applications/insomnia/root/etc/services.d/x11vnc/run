@@ -1,2 +1,8 @@
 #!/usr/bin/execlineb -P
-x11vnc -display :1 -forever
+
+set -eu
+
+s6-svwait /var/run/s6/services/xvfb
+
+x11vnc -storepasswd 'toor' /etc/x11vnc.pass
+x11vnc -rfbauth /etc/x11vnc.pass -display :1 -forever

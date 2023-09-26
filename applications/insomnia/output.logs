@@ -1,0 +1,23 @@
+# exec: fatal: unable to exec DISPLAY=:1: No such file or directory
+execlineb: fatal: unable to exec /opt/novnc/utils/launch.sh: No such file or directory
+execlineb: fatal: unable to exec set: No such file or directory
+XKB: Failed to compile keymap
+Keyboard initialization failed. This could be a missing or incorrect setup of xkeyboard-config.
+(EE)
+Fatal server error:
+(EE) Failed to activate virtual core keyboard: 2(EE)
+exitexeclineb: fatal: unable to exec /opt/novnc/utils/launch.sh: No such file or directory
+execlineb: fatal: unable to exec set: No such file or directory
+exec: fatal: unable to exec DISPLAY=:1: No such file or directory
+
+[cmd] sh exited 130
+[cont-finish.d] executing container finish scripts...
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+XKB: Failed to compile keymap
+Keyboard initialization failed. This could be a missing or incorrect setup of xkeyboard-config.
+(EE)
+Fatal server error:
+(EE) Failed to activate virtual core keyboard: 2(EE)
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
