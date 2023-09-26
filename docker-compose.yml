@@ -1,0 +1,10 @@
+---
+version: "3.0.0"
+
+services:
+  base:
+    build:
+      context: ./base/focal
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
