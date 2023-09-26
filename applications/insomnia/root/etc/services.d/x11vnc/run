@@ -1,0 +1,2 @@
+#!/usr/bin/execlineb -P
+x11vnc -display :1 -forever

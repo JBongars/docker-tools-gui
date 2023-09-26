@@ -8,3 +8,15 @@ services:
       dockerfile: Dockerfile
     tty: true
     stdin_open: true
+  insomnia:
+    build:
+      context: ./applications/insomnia
+      dockerfile: Dockerfile
+    # tty: true
+    # stdin_open: true
+    volumes:
+      - ./insomnia:/home/developer
+    # depends_on:
+    #   - base
+    # entrypoint: /bin/bash
+    # command: -c "insomnia"
