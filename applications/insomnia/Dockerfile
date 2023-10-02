@@ -33,11 +33,14 @@ ADD https://github.com/just-containers/s6-overlay/releases/download/v2.2.0.3/s6-
 RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C /
 
 # Copy service scripts
-COPY root /
+COPY --chmod=755 root /
 
 # Expose the VNC port and noVNC port
 EXPOSE 5900
 EXPOSE 6080
 
+# reset environment variables to default
+ENV DEBIAN_FRONTEND=dialog
+
 # Start s6 init system
-ENTRYPOINT ["/init"]
+CMD ["/init"]

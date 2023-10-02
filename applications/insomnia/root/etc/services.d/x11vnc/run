@@ -1,7 +1,5 @@
 #!/usr/bin/execlineb -P
 
-set -eu
-
 s6-svwait /var/run/s6/services/xvfb
 
 x11vnc -storepasswd 'toor' /etc/x11vnc.pass

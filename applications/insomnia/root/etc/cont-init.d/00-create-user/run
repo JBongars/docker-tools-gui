@@ -1,0 +1,14 @@
+#!/usr/bin/with-contenv sh
+
+set -eu
+set -o pipefail
+
+USERNAME="user"
+USER_UID="1000"
+
+[ id -u $USERNAME ] || adduser -D -u $USER_UID $USERNAME -s /bin/sh 
+[ -d /home/$USERNAME ] || mkdir -p /home/$USERNAME && chown -R $USERNAME:users /home/$USERNAME
+
+addgroup $USERNAME sudo
+
+exit 0
